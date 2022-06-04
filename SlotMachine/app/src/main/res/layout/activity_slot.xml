@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="entertainment.milan.slotmachine.Slot"
+    >
+
+    <ImageView
+        android:id="@+id/SlotMachine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/slotmachine"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/textUlog"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/btnPlay"
+        android:hint="      Ulog"
+        android:imeActionLabel="Gotovo"
+        android:imeOptions="actionDone"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textUlog"
+        android:layout_alignBottom="@+id/textUlog"
+        android:layout_toEndOf="@+id/imageSlotTwo"
+        android:text="Pritisni me" />
+
+    <ImageView
+        android:id="@+id/imageSlotOne"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/textUlog"
+        android:layout_marginBottom="190dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toStartOf="@+id/imageSlotTwo"
+        app:srcCompat="@drawable/blank" />
+
+    <ImageView
+        android:id="@+id/imageSlotTwo"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/imageSlotOne"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/blank" />
+
+    <ImageView
+        android:id="@+id/imageSlotThree"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/imageSlotTwo"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/imageSlotTwo"
+        app:srcCompat="@drawable/blank" />
+
+    <TextView
+        android:id="@+id/textMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="19dp"
+        android:textSize="32sp"
+        android:textColor="#000000"/>
+
+</RelativeLayout>
